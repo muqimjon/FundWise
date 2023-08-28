@@ -1,40 +1,47 @@
-﻿@* @using FundWise.Domain.Entities;
+﻿@using FundWise.Domain.Entities;
 @model User
 
-<div class="con">
+<h1>Create</h1>
+
+<div class="container">
     <form asp-controller="Users" asp-action="Create" method="post">
-        <div cite="col">
-            <div>
+        <div class="row">
+            <div class="col">
+
                 <label asp-for="FirstName"></label>
-                <input asp-for="FirstName" type="text">
+                <input asp-for="FirstName" class="form-control" type="text">
             </div>
-            <div>
-                <label asp-for="LastName"></label>
-                <input asp-for="LastName" type="text">
-            </div>
-            <div>
-                <label asp-for="DateOfBirth"></label>
-                <input asp-for="DateOfBirth" type="date">
+            <div class="col">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" type="email">
             </div>
         </div>
-          
-        <div class="col">
-            <div>
-                <label asp-for="Email"></label>
-                <input asp-for="Email" type="email">
+
+        <div class="row">
+            <div class="col">
+                <label asp-for="LastName"></label>
+                <input asp-for="LastName" class="form-control" type="text">
             </div>
-            <div>
+            <div class="col">
+
                 <label asp-for="Phone"></label>
-                <input asp-for="Phone" type="tel">
+                <input asp-for="Phone" class="form-control" type="tel">
             </div>
-            <div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label asp-for="DateOfBirth"></label>
+                <input asp-for="DateOfBirth" class="form-control" type="date">
+            </div>
+
+
+            <div class="col">
+
                 <label asp-for="Password"></label>
-                <input asp-for="Password" type="password">
+                <input asp-for="Password" class="form-control" type="password">
             </div>
         </div>
         <button>Back</button>
         <button>Save</button>
     </form>
-</div> *@
-
-<h1>Create</h1>
+</div>
