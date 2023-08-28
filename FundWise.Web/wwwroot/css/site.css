@@ -1,0 +1,102 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.sidebar {
+    width: 16%;
+    padding: 10px;
+    height: 80vh;
+    border-right: 1px solid gray;
+    position: fixed;
+    padding: 2%;
+}
+
+.sidebar li {
+    padding: 3%;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333E50;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+    margin: 2% 6%;
+    width: 110%;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #c2c7c7;
+    color: black;
+}
+
+.window {
+    margin-left: 10%;
+    width: 100%;
+}
+
+.home_page {
+    height: 50%;
+    width: 100%;
+    letter-spacing: 0.5px;
+}
+
+.home_page .fpm {
+    border-radius: 20px;
+    width: 50%;
+    height: 95%;
+    float: right;
+    filter: grayscale(.4);
+    transition: .3s;
+}
+
+.home_page .fpm:hover {
+    filter: grayscale(0);
+    transform: scale(1.05) rotate(1deg);
+    margin-right: 1%;
+    margin-top: 1%;
+    width: 52%;
+    height: 100%;
+}
+
+.home_page .name {
+    padding-top: 15%;
+    padding-left:7%;
+    width: 45%;
+    height: 40%;
+    float: left;
+}
+
+
+.home_page .info {
+    padding-top: 38%;
+}
+
+.action-buttons a {
+    margin-right: 4%;
+}
+

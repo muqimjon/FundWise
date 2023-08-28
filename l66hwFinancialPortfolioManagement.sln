@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundWise.WebApi", "FundWise.WebApi\FundWise.WebApi.csproj", "{4C229D71-600C-4CB9-A7C6-87817A7BAEF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FundWise.WebApi", "FundWise.WebApi\FundWise.WebApi.csproj", "{4C229D71-600C-4CB9-A7C6-87817A7BAEF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundWise.DataAccess", "FundWise.DataAccess\FundWise.DataAccess.csproj", "{D63E752B-B734-40D7-8921-F2D8848249C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FundWise.DataAccess", "FundWise.DataAccess\FundWise.DataAccess.csproj", "{D63E752B-B734-40D7-8921-F2D8848249C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundWise.Service", "FundWise.Service\FundWise.Service.csproj", "{A7AB9B46-3BC7-4104-B9AB-9F4C713C4BF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FundWise.Service", "FundWise.Service\FundWise.Service.csproj", "{A7AB9B46-3BC7-4104-B9AB-9F4C713C4BF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundWise.Domain", "FundWise.Domain\FundWise.Domain.csproj", "{FB6C2122-BFB0-446E-A472-BC1449573FC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FundWise.Domain", "FundWise.Domain\FundWise.Domain.csproj", "{FB6C2122-BFB0-446E-A472-BC1449573FC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundWise.Web", "FundWise.Web\FundWise.Web.csproj", "{DEF0F313-7882-4B1F-8927-E58AE9F39A3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FB6C2122-BFB0-446E-A472-BC1449573FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB6C2122-BFB0-446E-A472-BC1449573FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB6C2122-BFB0-446E-A472-BC1449573FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF0F313-7882-4B1F-8927-E58AE9F39A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF0F313-7882-4B1F-8927-E58AE9F39A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF0F313-7882-4B1F-8927-E58AE9F39A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF0F313-7882-4B1F-8927-E58AE9F39A3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

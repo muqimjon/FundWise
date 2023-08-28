@@ -12,7 +12,7 @@ namespace FundWise.WebApi.Extensions;
 
 public static class ServicesCollection
 {
-    public static void AddServices(this IServiceCollection services)
+    public static void AddServicesd(this IServiceCollection services)
     {
         services.AddAutoMapper(typeof(MappingProfile));
         services.AddScoped<IAuthService, AuthService>();

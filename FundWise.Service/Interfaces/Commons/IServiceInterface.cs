@@ -9,4 +9,5 @@ public interface IServiceInterface<TCreate, TUpdate, TResult>
     Task<bool> RemoveByIdAsync(long id);
     Task<TResult> RetrieveByIdAsync(long id);
     Task<IEnumerable<TResult>> RetrieveAllAsync(PaginationParams @params);
+    Task<IEnumerable<TResult>> RetrieveAllAsync();
 }

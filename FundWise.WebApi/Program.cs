@@ -27,7 +27,7 @@ builder.Services.AddSwaggerGen();
         options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")
         , b => b.MigrationsAssembly("FundWise.DataAccess")));
 
-    builder.Services.AddServices();
+    builder.Services.AddServicesd();
     builder.Services.AddJwt(builder.Configuration);
     builder.Services.ConfigureSwagger();
 

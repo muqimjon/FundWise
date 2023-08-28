@@ -95,6 +95,13 @@ public class UserService : IUserService
         return result;
     }
 
+    public async Task<IEnumerable<UserResultDto>> RetrieveAllAsync()
+    {
+        var users = (await repository.SelectAll().ToListAsync()).Where(i => !i.IsDeleted);
+        var result = mapper.Map<IEnumerable<UserResultDto>>(users);
+        return result;
+    }
+
     public async Task<UserResultDto> RetrieveByIdAsync(long id)
     {
         User existUser = await repository.SelectAsync(u => u.Id.Equals(id), includes: new[] { "Portfolios" })

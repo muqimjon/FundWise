@@ -79,4 +79,11 @@ public class TransactionService : ITransactionService
         var result = mapper.Map<IEnumerable<TransactionResultDto>>(Transactions);
         return result;
     }
+
+    public async Task<IEnumerable<TransactionResultDto>> RetrieveAllAsync()
+    {
+        var Transactions = (await repository.SelectAll().ToListAsync()).Where(i => !i.IsDeleted);
+        var result = mapper.Map<IEnumerable<TransactionResultDto>>(Transactions);
+        return result;
+    }
 }

@@ -67,8 +67,15 @@ public class InvestmentStrategyService : IInvestmentStrategyService
 
     public async Task<IEnumerable<InvestmentStrategyResultDto>> RetrieveAllAsync(PaginationParams @params)
     {
-        var InvestmentStrategys = await repository.SelectAll().ToPaginate(@params).ToListAsync();
-        var result = mapper.Map<IEnumerable<InvestmentStrategyResultDto>>(InvestmentStrategys);
+        var InvestmentStrategies = await repository.SelectAll().ToPaginate(@params).ToListAsync();
+        var result = mapper.Map<IEnumerable<InvestmentStrategyResultDto>>(InvestmentStrategies);
+        return result;
+    }
+
+    public async Task<IEnumerable<InvestmentStrategyResultDto>> RetrieveAllAsync()
+    {
+        var InvestmentStrategies = (await repository.SelectAll().ToListAsync()).Where(i => !i.IsDeleted);
+        var result = mapper.Map<IEnumerable<InvestmentStrategyResultDto>>(InvestmentStrategies);
         return result;
     }
 }

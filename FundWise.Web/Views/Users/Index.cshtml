@@ -1,0 +1,59 @@
+﻿@using FundWise.Service.DTOs;
+@model IEnumerable<UserResultDto>
+
+<div class="window">
+    <div class="col-12">
+        <h1 class="float-md-start">Users</h1>
+        <div style="width: 81%">
+            <a class="btn alert-primary float-end" asp-controller="Users" asp-action="Create">Create</a>
+        </div>
+    </div>
+    <table class="table">
+        <thead style="background-color: #333E50; color: #fff">
+            <tr>
+                <th>t/r</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>DataOfBirth</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        @{
+            int row = 0;
+        }
+        <tbody>
+            @foreach (var i in Model)
+            {
+                <tr style="@((++row % 2 == 0) ? "background-color: #F3F3F3" : "background-color: #fff")">
+                    <td>
+                        @Html.DisplayFor(id => row)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(id => i.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(id => i.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(id => i.DateOfBirth)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(id => i.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(id => i.Email)
+                    </td>
+                    <td class="action-buttons btn-group" role="group">
+                        <a class="btn alert-success" asp-controller="Users" asp-action="Detail" asp-route-id="@i.Id">Detail</a>
+                        <a class="btn alert-warning" asp-controller="Users" asp-action="Update" asp-route-id="@i.Id">Update</a>
+                        <form asp-controller="Users" asp-action="Delete" asp-route-id="@i.Id" method="post" onsubmit="return confirm('Ma\'lumotni o\'chirishga ishonchingiz komilmi?');">
+                            <button type="submit" class="btn alert-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

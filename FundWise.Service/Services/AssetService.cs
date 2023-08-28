@@ -71,4 +71,11 @@ public class AssetService : IAssetService
         var result = mapper.Map<IEnumerable<AssetResultDto>>(Assets);
         return result;
     }
+
+    public async Task<IEnumerable<AssetResultDto>> RetrieveAllAsync()
+    {
+        var Assets = (await repository.SelectAll().ToListAsync()).Where(i => !i.IsDeleted);
+        var result = mapper.Map<IEnumerable<AssetResultDto>>(Assets);
+        return result;
+    }
 }

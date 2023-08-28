@@ -71,4 +71,11 @@ public class FinancialDataService : IFinancialDataService
         var result = mapper.Map<IEnumerable<FinancialDataResultDto>>(FinancialInformation);
         return result;
     }
+
+    public async Task<IEnumerable<FinancialDataResultDto>> RetrieveAllAsync()
+    {
+        var FinancialInformation = (await repository.SelectAll().ToListAsync()).Where(i => !i.IsDeleted);
+        var result = mapper.Map<IEnumerable<FinancialDataResultDto>>(FinancialInformation);
+        return result;
+    }
 }

@@ -79,4 +79,11 @@ public class PortfolioService : IPortfolioService
         var result = mapper.Map<IEnumerable<PortfolioResultDto>>(Portfolios);
         return result;
     }
+
+    public async Task<IEnumerable<PortfolioResultDto>> RetrieveAllAsync()
+    {
+        var Portfolios = (await repository.SelectAll().ToListAsync()).Where(i => !i.IsDeleted);
+        var result = mapper.Map<IEnumerable<PortfolioResultDto>>(Portfolios);
+        return result;
+    }
 }

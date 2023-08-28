@@ -18,12 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FundWise.DataAccess\FundWise.DataAccess.csproj" />
-    <ProjectReference Include="..\FundWise.Service\FundWise.Service.csproj" />
+    <Folder Include="Logs\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Logs\" />
+    <ProjectReference Include="..\FundWise.Service\FundWise.Service.csproj" />
   </ItemGroup>
 
 </Project>
