@@ -1,13 +1,40 @@
-﻿@using FundWise.Domain.Entities;
+﻿@* @using FundWise.Domain.Entities;
 @model User
 
-<div class="window">
+<div class="con">
     <form asp-controller="Users" asp-action="Create" method="post">
-        <div class="col">
-
+        <div cite="col">
+            <div>
+                <label asp-for="FirstName"></label>
+                <input asp-for="FirstName" type="text">
+            </div>
+            <div>
+                <label asp-for="LastName"></label>
+                <input asp-for="LastName" type="text">
+            </div>
+            <div>
+                <label asp-for="DateOfBirth"></label>
+                <input asp-for="DateOfBirth" type="date">
+            </div>
         </div>
+          
         <div class="col">
+            <div>
+                <label asp-for="Email"></label>
+                <input asp-for="Email" type="email">
+            </div>
+            <div>
+                <label asp-for="Phone"></label>
+                <input asp-for="Phone" type="tel">
+            </div>
+            <div>
+                <label asp-for="Password"></label>
+                <input asp-for="Password" type="password">
+            </div>
         </div>
+        <button>Back</button>
+        <button>Save</button>
     </form>
+</div> *@
 
-</div>
+<h1>Create</h1>

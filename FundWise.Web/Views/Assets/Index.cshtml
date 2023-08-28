@@ -1,4 +1,67 @@
-﻿<div class="window">
+﻿@using FundWise.Service.DTOs;
+@model IEnumerable<AssetResultDto>
 
-<h1>Assets</h1>
+@{
+    var properties = typeof(AssetResultDto).GetProperties();
+}
+
+<div class="window">
+    <div class="col-12">
+        <h1 class="float-md-start">Assets</h1>
+        <div style="width: 81%">
+            <a class="btn alert-primary float-end" asp-controller="Assets" asp-action="Create">Create</a>
+        </div>
+    </div>
+    <table class="table">
+        <thead style="background-color: #333E50; color: #fff">
+            <tr>
+                <th>t/r</th>
+                @foreach (var i in properties)
+                    @if (!(i.Name.Equals("Id") || i.Name.Equals("Portfolio") || i.Name.Equals("Transactions")))
+                    {
+                        <th>@i.Name</th>
+                    }
+
+                <th>Actions</th>
+            </tr>
+        </thead>
+        @{
+            int row = 0;
+        }
+        <tbody>
+            @if (Model is not null)
+            {
+                @foreach (var id in Model)
+                {
+                    <tr style="@((++row % 2 == 0) ? "background-color: #F3F3F3" : "background-color: #fff"))">
+                        <td>
+                            @Html.DisplayFor(id => row)
+                        </td>
+
+                        @foreach (var i in properties)
+                            @if (!(i.Name.Equals("Id") || i.Name.Equals("Portfolio") || i.Name.Equals("Transactions")))
+                            {
+                                <th>@i.GetValue(id)</th>
+                            }
+                        <td class="action-buttons btn-group" role="group">
+                            <a class="btn alert-success" asp-controller="Assets" asp-action="Detail" asp-route-id="@id.Id">Detail</a>
+                            <a class="btn alert-warning" asp-controller="Assets" asp-action="Update" asp-route-id="@id.Id">Update</a>
+                            <form asp-controller="Assets" asp-action="Delete" asp-route-id="@id.Id" method="post" onsubmit="return confirm('Ma\'lumotni o\'chirishga ishonchingiz komilmi?');">
+                                <button type="submit" class="btn alert-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td>
+
+                        <h3>Sahifa bo'sh</h3>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

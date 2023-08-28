@@ -24,9 +24,10 @@ public class UsersController : Controller
         return View(users);
     }
 
+
     public async Task<IActionResult> Detail(long id)
     {
-        var dto = await _service.RemoveByIdAsync(id);
+        var dto = await _service.RetrieveByIdAsync(id);
         return View(dto);
     }
 
