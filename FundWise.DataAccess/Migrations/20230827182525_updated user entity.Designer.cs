@@ -13,7 +13,7 @@ namespace FundWise.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20230827182525_updated user entity")]
-    partial class updateduserentity
+    partial class UpdatedUserEntity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

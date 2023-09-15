@@ -17,4 +17,10 @@ public class AssetsController : Controller
         var assets = await service.RetrieveAllAsync();
         return View(assets);
     }
+
+    public async Task<IActionResult> Detail(long id)
+    {
+        var dto = await service.RetrieveByIdAsync(id);
+        return View(dto);
+    }
 }

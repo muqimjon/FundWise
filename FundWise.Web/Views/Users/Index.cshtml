@@ -68,11 +68,11 @@
 <div class="window">
     <div class="col-12">
         <h1 class="float-md-start">Users</h1>
-        <div style="width: 81%">
+        <div style="width: 85%">
             <a class="btn alert-primary float-end" asp-controller="Users" asp-action="Create">Create</a>
         </div>
     </div>
-    <table class="table">
+    <table class="table">  @* table-striped table-hover *@
         <thead style="background-color: #333E50; color: #fff">
             <tr>
                 <th>t/r</th>
@@ -93,7 +93,7 @@
             {
                 @foreach (var id in Model)
                 {
-                    <tr style="@((++row % 2 == 0) ? "background-color: #F3F3F3" : "background-color: #fff"))">
+                    <tr style="@((++row % 2 == 0) ? "background-color: #F3F3F3" : "background-color: #fff")">
                         <td>
                             @Html.DisplayFor(id => row)
                         </td>

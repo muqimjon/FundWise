@@ -252,8 +252,8 @@ namespace FundWise.DataAccess.Migrations
                         new
                         {
                             Id = 10L,
-                            CreateAt = new DateTime(2023, 8, 28, 11, 8, 59, 506, DateTimeKind.Utc).AddTicks(1557),
-                            DateOfBirth = new DateTime(1990, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreateAt = new DateTime(2023, 8, 28, 11, 26, 31, 719, DateTimeKind.Utc).AddTicks(2034),
+                            DateOfBirth = new DateTime(1990, 5, 14, 19, 0, 0, 0, DateTimeKind.Utc),
                             Email = "johndoe@example.com",
                             FirstName = "John",
                             IsDeleted = false,
@@ -265,8 +265,8 @@ namespace FundWise.DataAccess.Migrations
                         new
                         {
                             Id = 20L,
-                            CreateAt = new DateTime(2023, 8, 28, 11, 8, 59, 506, DateTimeKind.Utc).AddTicks(1579),
-                            DateOfBirth = new DateTime(1985, 10, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreateAt = new DateTime(2023, 8, 28, 11, 26, 31, 719, DateTimeKind.Utc).AddTicks(2083),
+                            DateOfBirth = new DateTime(1985, 10, 24, 19, 0, 0, 0, DateTimeKind.Utc),
                             Email = "emilysmith@example.com",
                             FirstName = "Emily",
                             IsDeleted = false,
@@ -278,8 +278,8 @@ namespace FundWise.DataAccess.Migrations
                         new
                         {
                             Id = 30L,
-                            CreateAt = new DateTime(2023, 8, 28, 11, 8, 59, 506, DateTimeKind.Utc).AddTicks(1582),
-                            DateOfBirth = new DateTime(1978, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreateAt = new DateTime(2023, 8, 28, 11, 26, 31, 719, DateTimeKind.Utc).AddTicks(2087),
+                            DateOfBirth = new DateTime(1978, 3, 7, 19, 0, 0, 0, DateTimeKind.Utc),
                             Email = "michaeljohnson@example.com",
                             FirstName = "Michael",
                             IsDeleted = false,
@@ -291,8 +291,8 @@ namespace FundWise.DataAccess.Migrations
                         new
                         {
                             Id = 40L,
-                            CreateAt = new DateTime(2023, 8, 28, 11, 8, 59, 506, DateTimeKind.Utc).AddTicks(1584),
-                            DateOfBirth = new DateTime(1995, 7, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreateAt = new DateTime(2023, 8, 28, 11, 26, 31, 719, DateTimeKind.Utc).AddTicks(2090),
+                            DateOfBirth = new DateTime(1995, 7, 11, 19, 0, 0, 0, DateTimeKind.Utc),
                             Email = "jessicawilliams@example.com",
                             FirstName = "Jessica",
                             IsDeleted = false,
@@ -304,8 +304,8 @@ namespace FundWise.DataAccess.Migrations
                         new
                         {
                             Id = 50L,
-                            CreateAt = new DateTime(2023, 8, 28, 11, 8, 59, 506, DateTimeKind.Utc).AddTicks(1586),
-                            DateOfBirth = new DateTime(1992, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreateAt = new DateTime(2023, 8, 28, 11, 26, 31, 719, DateTimeKind.Utc).AddTicks(2092),
+                            DateOfBirth = new DateTime(1992, 9, 9, 19, 0, 0, 0, DateTimeKind.Utc),
                             Email = "sanjar@example.com",
                             FirstName = "Sanjar",
                             IsDeleted = false,
@@ -317,8 +317,8 @@ namespace FundWise.DataAccess.Migrations
                         new
                         {
                             Id = 60L,
-                            CreateAt = new DateTime(2023, 8, 28, 11, 8, 59, 506, DateTimeKind.Utc).AddTicks(1588),
-                            DateOfBirth = new DateTime(1992, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreateAt = new DateTime(2023, 8, 28, 11, 26, 31, 719, DateTimeKind.Utc).AddTicks(2095),
+                            DateOfBirth = new DateTime(1992, 9, 9, 19, 0, 0, 0, DateTimeKind.Utc),
                             Email = "sanjar@example.com",
                             FirstName = "Sanjar",
                             IsDeleted = false,
@@ -330,8 +330,8 @@ namespace FundWise.DataAccess.Migrations
                         new
                         {
                             Id = 70L,
-                            CreateAt = new DateTime(2023, 8, 28, 11, 8, 59, 506, DateTimeKind.Utc).AddTicks(1590),
-                            DateOfBirth = new DateTime(1993, 4, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreateAt = new DateTime(2023, 8, 28, 11, 26, 31, 719, DateTimeKind.Utc).AddTicks(2097),
+                            DateOfBirth = new DateTime(1993, 4, 4, 19, 0, 0, 0, DateTimeKind.Utc),
                             Email = "umid@example.com",
                             FirstName = "Umid",
                             IsDeleted = false,
@@ -343,8 +343,8 @@ namespace FundWise.DataAccess.Migrations
                         new
                         {
                             Id = 80L,
-                            CreateAt = new DateTime(2023, 8, 28, 11, 8, 59, 506, DateTimeKind.Utc).AddTicks(1592),
-                            DateOfBirth = new DateTime(1991, 11, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreateAt = new DateTime(2023, 8, 28, 11, 26, 31, 719, DateTimeKind.Utc).AddTicks(2099),
+                            DateOfBirth = new DateTime(1991, 11, 14, 19, 0, 0, 0, DateTimeKind.Utc),
                             Email = "nodir@example.com",
                             FirstName = "Nodir",
                             IsDeleted = false,
